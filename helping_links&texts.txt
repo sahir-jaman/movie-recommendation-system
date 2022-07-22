@@ -1,13 +1,10 @@
-9ddbde1dfd26fe1a81974fc9bc138fe7
+my heroku api: 9ddbde1dfd26fe1a81974fc9bc138fe7
 
 https://developers.themoviedb.org/3/movie/%7Bmovie_id%7D?api_key%3E%3E&language=en-US
 
-https://api.themoviedb.org/3/movie/{movie_id}?api_key=<<api_key>>&language=en-US
+movie_id placing actual link: https://api.themoviedb.org/3/movie/{movie_id}?api_key=<<api_key>>&language=en-US
+movie_id placing example link:https://api.themoviedb.org/3/movie/19995?api_key=9ddbde1dfd26fe1a81974fc9bc138fe7&language=en-US
 
-https://api.themoviedb.org/3/movie/19995?api_key=9ddbde1dfd26fe1a81974fc9bc138fe7&language=en-US
-
-"https://image.tmdb.org/t/p/w500/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg"
-272
-
-"https://image.tmdb.org/t/p/w500/hQrHN6WXERVw6XUMpfCgLfvrh5V.jpg"
+poster finding link: "https://image.tmdb.org/t/p/w500/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg"
+another poster finding: "https://image.tmdb.org/t/p/w500/hQrHN6WXERVw6XUMpfCgLfvrh5V.jpg"
 
