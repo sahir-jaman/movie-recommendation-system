@@ -1,9 +1,11 @@
+# making app with streamlit framework
+
 import streamlit as st
 import pickle
 import pandas as pd
 import requests
 
-
+# fetching movie poster function
 def fetch_poster(movie_id):
     response = requests.get(
         'https://api.themoviedb.org/3/movie/{}?api_key=9ddbde1dfd26fe1a81974fc9bc138fe7&language=en-US'.format(
@@ -19,13 +21,14 @@ movies = pd.DataFrame(movies_dict)  # taking whole dataset as movies variable, s
 # taking similarity calculation matrix as similarity.pkl at the similarity variable
 similarity = pickle.load(open('similarity.pkl', 'rb'))
 
+# streamlit commands; link of this framework documentation: https://docs.streamlit.io/library/get-started
 st.title('A Movie Recommendation System')
 selected_movie_name = st.selectbox(
     'Which movie u want to search?',
     movies['title'].values
 )
 
-
+# same commands is being used which u used in the jupyter-Notebook
 def recommend_func(movie):
     movie_index = movies[movies['title'] == movie].index[0]
     distances = similarity[movie_index]
